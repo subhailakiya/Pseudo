@@ -1,0 +1,27 @@
+/*{          
+    
+    background-color: blue;
+    color:white;
+}*/
+
+
+.para1{                   
+    color:blueviolet;
+    background-color: aqua;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+}
+
+#para2{
+    color:red;
+    background-color:blue;
+}
+
+h1{
+    color:green;
+    background-color: yellow;
+}
+
+
+
