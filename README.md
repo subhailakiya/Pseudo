@@ -1,2 +1,2 @@
-# Selector
-Created Selector using HTML and CSS
+# Pseudo
+Created Pseudo using HTML and CSS
