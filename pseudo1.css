@@ -1,0 +1,89 @@
+body{
+    padding:10%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* <--- the hello comes before the h1 1st we have to know the before nd after not comes between the h1 as before nd after it will 
+                         be content but in img we don't have bcoz img is one source not having content so it will not support--->
+
+h1::after{
+    content: 'hello';
+
+    color:aqua;
+} */
+/* h1::before{
+    content:'hi';
+    color:yellow;
+} */
+
+/* need a underline or box in the h1. without display it takes default inline using inline it takes in same line nothing is happen so that
+using block line come in next line that line takes h1 height and width same content used for after. 
+ii)then using transform scaleX or scale y for it increase regarding x or y axis.
+iii) using transition for slow the line or any thing . 
+iv) i use same transform scale ,x or y with(0) it bring as output is no line but having same transform in hover with 
+scale (1) it takes 100 as a full line in the sentence.
+v) transition-origin used for start from left in hover using as right to be end.
+
+h1::before{
+    content:'';   
+    display: block;          
+    height:10px;
+    width:100%;
+    background-color: aqua;
+
+}
+
+/* it comes as long line than h1 so that we use display as inline-block then it takes as same in h1 and line */
+h1{
+    display: inline-block;
+}
+
+h1::after{
+    content:'';   
+    display: block;          
+    height:10px;
+    width:100%;
+    transform: scaleX(0);
+    transition: transform 300ms;
+    transform-origin: left;
+    background-color: aqua;
+}
+h1:hover:after{
+    transform: scaleX(1);
+    transform-origin: right;
+    
+}
+/* 
+using img ,transition comes from that img */
+.insta{
+    height:80%;
+    width:1000px;
+    background-color: yellow;
+}
+.insta img{
+    width:70%;
+    height: 70%;
+}
+ .insta::after{
+    content:'';
+    position:fixed;
+transform: scale(0);
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    transition: transform 300ms;
+ 
+}
+
+  .insta:hover::after{
+    transform:scale(1) ;
+    background-color: rgba(12, 141, 55, 0.462);
+ } 
+
+ /* selection used for select the text it change the color and background */
+
+ ::selection{
+
+    background-color: orangered;
+ }
